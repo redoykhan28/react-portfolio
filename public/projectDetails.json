@@ -2,6 +2,7 @@
     {
         "id": "A",
         "project": "E-MOBO",
+        "title": "Resale E-commerse Site",
         "details": "E-MOBO is a resale ecommerse site where you can purchase any resale mobile phone",
         "feature": {
             "f1": "The site is built with three types of users, 1. buyer, 2. seller, and 3. admin.",
@@ -24,6 +25,7 @@
     {
         "id": "B",
         "project": "DEVENTS",
+        "title": "Event Management Site",
         "details": "DEVENTS is an event management site where you can hire a proffesional photographer",
         "feature": {
             "f1": "The website is fully responsive with bootstrap",
@@ -46,6 +48,7 @@
     {
         "id": "C",
         "project": "Skill Edge",
+        "title": "E-Learning Platform",
         "details": "Skill Edge is an E-learning website where you can purchase any course to improve skills.",
         "feature": {
             "f1": "The Website is fully responsive using bootstrap",
