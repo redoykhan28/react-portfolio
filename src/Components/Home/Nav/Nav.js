@@ -1,10 +1,26 @@
-import React from 'react';
-import { FaCloudDownloadAlt } from 'react-icons/fa';
+import React, { useContext, useState } from 'react';
+import { FaCloudDownloadAlt, FaMoon, FaSun } from 'react-icons/fa';
+import { modeContext } from '../../../Context/ModeContext';
 
 const Nav = () => {
+
+    //use context
+    const { mode, setMode } = useContext(modeContext)
+
+    //for dark mode
+    const toogleHandlerDark = () => {
+
+        setMode(true)
+    }
+    //for light mode
+    const toogleHandlerLight = () => {
+
+        setMode(false)
+    }
+
     return (
         <div>
-            <div className="navbar px-4 bg-white rounded-full w-9/12 mx-auto fixed z-40	">
+            <div className={mode ? "navbar px-4 bg-neutral text-white rounded-full w-9/12 mx-auto fixed z-40" : "navbar px-4 bg-white rounded-full w-9/12 mx-auto fixed z-40	"}>
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -17,18 +33,24 @@ const Nav = () => {
                             <li><a href='#contact'>Contact</a></li>
                         </ul>
                     </div>
-                    <a className="btn btn-ghost normal-case text-xl">Portfolio</a>
+                    <a href='#home' className="btn btn-ghost normal-case text-xl">Portfolio</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
-                        <li><a href='#home'>Home</a></li>
-                        <li><a href='#about'>About</a></li>
-                        <li><a href='#portfolio'>Portfolio</a></li>
-                        <li><a href='#contact'>Contact</a></li>
+                        <li><a className='menu' href='#home'>Home</a></li>
+                        <li><a className='menu' href='#about'>About</a></li>
+                        <li><a className='menu' href='#portfolio'>Portfolio</a></li>
+                        <li><a className='menu' href='#contact'>Contact</a></li>
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn btn-accent rounded-full text-white">Download resume <FaCloudDownloadAlt className='mx-2'></FaCloudDownloadAlt></a>
+                    {
+                        mode === true ?
+                            <FaMoon onClick={toogleHandlerLight} className='text-xl cursor-pointer font-bold mx-6'></FaMoon>
+                            :
+                            <FaSun onClick={toogleHandlerDark} className='text-xl cursor-pointer font-bold mx-6'></FaSun>
+                    }
+                    <a className={mode ? "btn bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full text-white" : "btn btn-accent rounded-full text-white"}>Download resume <FaCloudDownloadAlt className='mx-2'></FaCloudDownloadAlt></a>
                 </div>
             </div>
         </div>

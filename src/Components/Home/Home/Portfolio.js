@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { modeContext } from '../../../Context/ModeContext';
 import AboutMe from '../About/AboutMe';
 import Contact from '../Contact/Contact';
 import Footer from '../Footer/Footer';
@@ -7,8 +8,11 @@ import Nav from '../Nav/Nav';
 import PortfolioSection from '../PortFolio/PortfolioSection';
 
 const Portfolio = () => {
+
+    const { mode } = useContext(modeContext)
+
     return (
-        <div className='bg-primary pt-8'>
+        <div className={mode ? 'bg-info pt-8' : 'bg-primary pt-8'}>
             <section className='w-9/12 mx-auto'>
                 <Nav></Nav>
             </section>

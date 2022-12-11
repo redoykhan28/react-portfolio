@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import image from '../../../Images/126841642_2749445481961165_3654500392572136334_n.jpg'
 import { FaArrowDown } from "react-icons/fa";
+import { modeContext } from '../../../Context/ModeContext';
 
 
 const AboutMe = () => {
+    //use context
+    const { mode } = useContext(modeContext)
     return (
         <div>
-            <div className="hero lg:w-11/12 p-4 mx-auto rounded-xl shadow-lg bg-white">
+            <div className={mode ? "hero lg:w-11/12 p-4 mx-auto rounded-xl shadow-lg bg-neutral text-white" : "hero lg:w-11/12 p-4 mx-auto rounded-xl shadow-lg bg-white"}>
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <div className='lg:w-1/2 mx-10'>
                         <img src={image} className="lg:11/12 mx-auto rounded-lg shadow-2xl" alt='img' />
@@ -22,18 +25,18 @@ const AboutMe = () => {
 
                         <div>
                             <div className='flex justify-between mt-8 mb-2'>
-                                <h3 className='text-accent font-bold'>Age: <span className='text-neutral'>24</span></h3>
-                                <h3 className='text-accent font-bold'>Resident: <span className='text-neutral'>Bangladesh</span></h3>
+                                <h3 className='text-accent font-bold'>Age: <span className={mode ? 'text-white' : 'text-neutral'}>24</span></h3>
+                                <h3 className='text-accent font-bold'>Resident: <span className={mode ? 'text-white' : 'text-neutral'}>Bangladesh</span></h3>
                             </div>
 
                             <div className='flex justify-between my-2'>
-                                <h3 className='text-accent font-bold'>Status: <span className='text-neutral'>Available</span></h3>
-                                <h3 className='text-accent font-bold'>Address: <span className='text-neutral'>Rajshahi</span></h3>
+                                <h3 className='text-accent font-bold'>Status: <span className={mode ? 'text-white' : 'text-neutral'}>Available</span></h3>
+                                <h3 className='text-accent font-bold'>Address: <span className={mode ? 'text-white' : 'text-neutral'}>Rajshahi</span></h3>
                             </div>
 
                             <div className='flex justify-between my-2'>
-                                <h3 className='text-accent font-bold'>Email: <span className='text-neutral'>sezan.ahmed@gmail.com</span></h3>
-                                <h3 className='text-accent font-bold'>Phone: <span className='text-neutral'>+8801533648519</span></h3>
+                                <h3 className='text-accent font-bold'>Email: <span className={mode ? 'text-white' : 'text-neutral'}>sezan.ahmed@gmail.com</span></h3>
+                                <h3 className='text-accent font-bold'>Phone: <span className={mode ? 'text-white' : 'text-neutral'}>+8801533648519</span></h3>
 
                             </div>
 
