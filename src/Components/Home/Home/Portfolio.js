@@ -24,10 +24,10 @@ const Portfolio = () => {
             <section id='about'>
                 <AboutMe></AboutMe>
             </section>
-            <section id='portfolio' className='mt-28'>
+            <section data-aos="zoom-in" id='portfolio' className='mt-28'>
                 <PortfolioSection></PortfolioSection>
             </section>
-            <section id='contact' className='mt-12'>
+            <section data-aos="fade-down" id='contact' className='mt-24'>
                 <Contact></Contact>
             </section>
             <section>

@@ -3,6 +3,10 @@ import './App.css';
 import Portfolio from './Components/Home/Home/Portfolio';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import PortfolioDetails from './Components/Home/PortFolio/PortfolioDetails';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+
 
 
 const router = createBrowserRouter([
@@ -19,6 +23,9 @@ const router = createBrowserRouter([
 ])
 
 function App() {
+  useEffect(() => {
+    AOS.init({ duration: 1000 })
+  }, [])
   return (
     <div className="App">
       <RouterProvider router={router}></RouterProvider>

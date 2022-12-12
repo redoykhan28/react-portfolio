@@ -99,10 +99,10 @@ const PortfolioDetails = () => {
                 <p className='mt-6 '>Technologies:{details.Technologies}</p>
 
                 <div className='flex justify-between mt-6'>
-                    <a className='btn btn-accent text-white' href="">Live Site</a>
+                    <a className='btn btn-accent text-white' href={details.live}>Live Site</a>
                     <div className='flex'>
-                        <a className='btn btn-neutral text-white mx-2' href="">Client Repository</a>
-                        <a className='btn btn-secondary text-white' href="">Server Repository</a>
+                        <a className='btn btn-neutral text-white mx-2' href={details.client}>Client Repository</a>
+                        <a className='btn btn-secondary text-white' href={details.server}>Server Repository</a>
                     </div>
                 </div>
 
