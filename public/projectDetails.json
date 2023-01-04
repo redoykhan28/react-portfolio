@@ -117,12 +117,12 @@
         },
         "Technologies": " React.JS, Express.JS, Firebase, Tailwind, ES6, GitHub, REST API, Vercel, JWT etc",
         "img": {
-            "img1": "https: //i.ibb.co/KyW5dkh/1.png",
-            "img2": "https: //i.ibb.co/7GL2LN4/2.png",
-            "img3": "https: //i.ibb.co/9g7bTmr/3.png",
-            "img4": "https: //i.ibb.co/Hp9X0hx/4.png",
-            "img5": "https: //i.ibb.co/p0sztTP/5.png",
-            "img6": "https: //i.ibb.co/1qsz6Jc/6.png"
+            "img1": "https://i.ibb.co/KyW5dkh/1.png",
+            "img2": "https://i.ibb.co/7GL2LN4/2.png",
+            "img3": "https://i.ibb.co/9g7bTmr/3.png",
+            "img4": "https://i.ibb.co/Hp9X0hx/4.png",
+            "img5": "https://i.ibb.co/p0sztTP/5.png",
+            "img6": "https://i.ibb.co/1qsz6Jc/6.png"
         },
         "live": "https://furnicore.netlify.app/home",
         "client": "https://github.com/redoykhan28/furnicore-client",
