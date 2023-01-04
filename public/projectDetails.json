@@ -107,7 +107,7 @@
         "id": "E",
         "project": "Furnicore",
         "title": "E-commerse Web Application",
-        "details": "Furnicore is an E-commerse site where you can purchase your desiger furniture for your home or office..",
+        "details": "Furnicore is an E-commerse site where you can purchase your desiger furniture for your home or office.",
         "feature": {
             "f1": "The Website is fully responsive using tailwind.",
             "f2": "Here we can get 2 type of user, 1.customer, 2.Admin.",

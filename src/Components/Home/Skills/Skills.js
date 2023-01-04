@@ -64,15 +64,15 @@ const Skills = () => {
                             <div data-aos="zoom-out" className="card-body ">
                                 <div className='flex items-center mt-2'>
                                     <div className={mode ? "radial-progress text-success" : "radial-progress text-accent"} style={{ "--value": 85 }}>85%</div>
-                                    <h4 className=' text-md mx-3 font-bold mt-3'>Frontend Development</h4>
+                                    <h4 className=' text-md ml-2 lg:mx-3 font-bold mt-3'>Frontend Development</h4>
                                 </div>
                                 <div className='flex items-center mt-2'>
                                     <div className={mode ? "radial-progress text-success" : "radial-progress text-accent"} style={{ "--value": 70 }}>70%</div>
-                                    <h4 className=' text-md mx-3 font-bold mt-3'>Full-Stack Development</h4>
+                                    <h4 className=' text-md ml-2 lg:mx-3 font-bold mt-3'>Full-Stack Development</h4>
                                 </div>
                                 <div className='flex items-center mt-2'>
                                     <div className={mode ? "radial-progress text-success" : "radial-progress text-accent"} style={{ "--value": 80 }}>80%</div>
-                                    <h4 className=' text-md mx-3 font-bold mt-3'>UI/Ux Design</h4>
+                                    <h4 className=' text-md ml-2 lg:mx-3 font-bold mt-3'>UI/Ux Design</h4>
                                 </div>
                             </div>
                         </div>

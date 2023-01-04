@@ -36,7 +36,7 @@ const PortfolioDetails = () => {
                 <div className='pb-8'>
                     <div data-aos='zoom-in'>
                         <h1 className='text-5xl font-extrabold'>{details?.project}</h1>
-                        <p className='font-semibold'>{details?.title}</p>
+                        <p className='font-semibold mt-3'>{details?.title}</p>
                     </div>
                     <p data-aos='fade-left' className='mt-6 w-96 mx-auto'>{details.details}</p>
                     <a className={mode ? 'btn btn-success rounded-full my-6 text-white' : 'btn btn-accent rounded-full my-6 text-white'} href="#feature">See Features</a>
@@ -91,7 +91,7 @@ const PortfolioDetails = () => {
                 </div>
             </div>
 
-            <div className='w-full lg:w-9/12 mx-auto bg-white my-10 p-10 rounded-xl'>
+            <div className={mode ? 'w-full lg:w-9/12 mx-auto bg-neutral text-white my-10 p-10 rounded-xl' : 'w-full lg:w-9/12 mx-auto bg-white my-10 p-10 rounded-xl'}>
                 <h1 id='feature' className='text-3xl font-bold mb-6'>Key Features</h1>
                 <ul className='text-left font-semibold'>
                     <li className='my-2'>1. {details?.feature?.f1}</li>
@@ -104,9 +104,9 @@ const PortfolioDetails = () => {
                 <p className='mt-6 text-start font-bold'>Technologies: <span className='font-normal'>{details.Technologies}</span></p>
 
                 <div className='flex justify-between flex-col lg:flex-row mt-6'>
-                    <a target={'_blank'} className='btn btn-accent my-3 lg:my-0 text-white' href={details?.live}>Live Site</a>
+                    <a target={'_blank'} className={mode ? 'btn bg-white text-black my-3 lg:my-0 text-white' : 'btn btn-accent my-3 lg:my-0 text-white'} href={details?.live}>Live Site</a>
                     <div className='flex flex-col lg:flex-row '>
-                        <a target={'_blank'} className='btn btn-neutral text-white mx-2' href={details?.client}>Client Repository</a>
+                        <a target={'_blank'} className={mode ? 'btn btn-success text-white mx-2' : 'btn btn-neutral text-white mx-2'} href={details?.client}>Client Repository</a>
                         <a target={'_blank'} className='btn my-3 lg:my-0 btn-secondary text-white' href={details?.server}>Server Repository</a>
                     </div>
                 </div>
