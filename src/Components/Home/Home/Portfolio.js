@@ -6,6 +6,8 @@ import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
 import Nav from '../Nav/Nav';
 import PortfolioSection from '../PortFolio/PortfolioSection';
+import Service from '../Service/Service';
+import Skills from '../Skills/Skills';
 
 const Portfolio = () => {
 
@@ -21,8 +23,14 @@ const Portfolio = () => {
                 <Header></Header>
             </section >
 
-            <section id='about'>
+            <section data-aos={mode ? "fade-up" : ''} id='about'>
                 <AboutMe></AboutMe>
+            </section>
+            <section id='services' data-aos="zoom-in" className='mt-24'>
+                <Service></Service>
+            </section>
+            <section id='skills' className='mt-24'>
+                <Skills></Skills>
             </section>
             <section data-aos="zoom-in" id='portfolio' className='mt-28'>
                 <PortfolioSection></PortfolioSection>

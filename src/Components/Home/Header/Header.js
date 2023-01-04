@@ -10,6 +10,9 @@ import './Header.css'
 const Header = () => {
     const { mode } = useContext(modeContext)
 
+
+
+
     const [loop, setLoop] = useState(0)
     const [deleting, setDeleting] = useState(false)
     const [text, setText] = useState('')
@@ -63,6 +66,7 @@ const Header = () => {
                                         <img src={img2} alt="img" />
 
                                     </div>
+
                                 </div>
                                 :
                                 <div data-aos="zoom-in" className=" avatar">
@@ -72,24 +76,25 @@ const Header = () => {
                                 </div>
                         }
                         <div className='my-8'>
-                            <h1 data-aos="zoom-in" className={mode ? 'text-3xl text-white font-extrabold' : 'text-3xl font-extrabold'}>SEZAN <span className={mode ? 'text' : 'text-accent'}>AHMED</span></h1>
+                            <h1 data-aos={mode ? '' : "fade-up"} className={mode ? 'text-3xl text-white font-extrabold' : 'text-3xl font-extrabold'}>SEZAN <span className={mode ? 'text' : 'text-accent'}>AHMED</span></h1>
                             <p className={mode ? 'text font-semibold' : 'text-accent font-semibold'}>I'm a <span>{text}</span> </p>
-                            <div className='my-4 flex justify-center'>
-                                <button data-aos="zoom-out" className={mode ? "btn btn-sm btn-circle bg-neutral shadow-xl border-0 mx-1" : "btn btn-sm btn-circle bg-white shadow-lg border-0 mx-1 hover:bg-base-200"}>
+                            <div data-aos={mode ? '' : "zoom-in"} className='my-4 flex justify-center'>
+                                <a href='https://www.linkedin.com/in/sezan-ahmed/' target={'_blank'} className={mode ? "btn btn-sm btn-circle bg-neutral shadow-xl border-0 mx-1" : "btn btn-sm btn-circle bg-white shadow-lg border-0 mx-1 hover:bg-base-200"}>
                                     <FaLinkedinIn className='text-blue-600'></FaLinkedinIn>
-                                </button>
-                                <button data-aos="zoom-in" className={mode ? "btn btn-sm btn-circle bg-neutral shadow-lg border-0 mx-1" : "btn btn-sm btn-circle bg-white shadow-lg border-0 mx-1 hover:bg-base-200"}>
+                                </a>
+                                <a href='https://github.com/redoykhan28' target={'_blank'} className={mode ? "btn btn-sm btn-circle bg-neutral shadow-lg border-0 mx-1" : "btn btn-sm btn-circle bg-white shadow-lg border-0 mx-1 hover:bg-base-200"}>
                                     <GoMarkGithub className='text-accent'></GoMarkGithub>
-                                </button>
-                                <button data-aos="zoom-in" className={mode ? "btn btn-sm btn-circle bg-neutral shadow-lg border-0 mx-1" : "btn btn-sm btn-circle bg-white shadow-lg border-0 mx-1 hover:bg-base-200"}>
+                                </a>
+                                <a href='#contact' className={mode ? "btn btn-sm btn-circle bg-neutral shadow-lg border-0 mx-1" : "btn btn-sm btn-circle bg-white shadow-lg border-0 mx-1 hover:bg-base-200"}>
                                     <FaRegEnvelope className={mode ? 'text-white' : 'text-black'}></FaRegEnvelope>
-                                </button>
+                                </a>
                             </div>
 
                             <div className='mt-8'>
                                 <a href="#about" className="btn bg-transparent btn-sm btn-circle hover:bg-white border-0">
                                     <FaArrowDown className={mode ? 'text-success' : 'text-accent '}></FaArrowDown>
-                                </a>                            </div>
+                                </a>
+                            </div>
 
                         </div>
                     </div>

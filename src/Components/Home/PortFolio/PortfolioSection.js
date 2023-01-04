@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import PortfolioCard from './PortfolioCard';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css/bundle';
@@ -10,6 +10,7 @@ import { EffectCoverflow } from 'swiper';
 
 import { Navigation, Pagination } from 'swiper';
 import './swipper.css'
+import { modeContext } from '../../../Context/ModeContext';
 
 
 
@@ -17,6 +18,9 @@ import './swipper.css'
 
 
 const PortfolioSection = () => {
+
+    const { mode } = useContext(modeContext)
+
 
     const [cards, setCard] = useState([]);
 
@@ -29,8 +33,8 @@ const PortfolioSection = () => {
 
     return (
         <div>
-            <h1 className='text-5xl font-bold'>Portfolio</h1>
-            <p className='text-accent font-semibold mt-2'>My ShowCase</p>
+            <h1 className={mode ? 'text-5xl text-white font-bold' : 'text-5xl font-bold'}>Portfolio</h1>
+            <p className={mode ? 'text-success font-semibold mt-2' : 'text-accent font-semibold mt-2'}>My ShowCase</p>
 
             <Swiper modules={[Navigation, EffectCoverflow]} effect='coverflow' className='md:w-11/12 mx-auto'
                 spaceBetween={0}
