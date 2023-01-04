@@ -76,5 +76,31 @@
         "client": "https://github.com/redoykhan28/dev-skill-edge-client",
         "server": "https://github.com/redoykhan28/dev-skill-edge-server",
         "project_id": 3
+    },
+    {
+        "id": "D",
+        "project": "AnyCare",
+        "title": "Appoinment Management Web App",
+        "details": "AnyCare is a pet appointment scheduling website where you can schedule a appointment to experts.",
+        "feature": {
+            "f1": "The Website is fully responsive using tailwind.",
+            "f2": "Visitors need to be login for appoinment schedule .",
+            "f3": "After booked a Schedule, User can cancel or reschedule it.",
+            "f4": "There's an admin panel where admin can manage users and all the appoinments.",
+            "f5": "Admin can make any user to admin."
+        },
+        "Technologies": " React.JS, Express.JS, Firebase, Tailwind, ES6, GitHub, REST API, Vercel, JWT etc",
+        "img": {
+            "img1": "https://i.ibb.co/c2cy2jb/1.png",
+            "img2": "https://i.ibb.co/bK6FJcz/2.png",
+            "img3": "https://i.ibb.co/ZKHfwbF/3.png",
+            "img4": "https://i.ibb.co/sVV082z/4.png",
+            "img5": "https://i.ibb.co/Cmw6R1t/5.png",
+            "img6": "https://i.ibb.co/fvvTk3P/6.png"
+        },
+        "live": "https://skilled-edge-e-learning-site.web.app/",
+        "client": "https://github.com/redoykhan28/dev-skill-edge-client",
+        "server": "https://github.com/redoykhan28/dev-skill-edge-server",
+        "project_id": 3
     }
 ]

@@ -91,23 +91,23 @@ const PortfolioDetails = () => {
                 </div>
             </div>
 
-            <div className='w-9/12 mx-auto bg-white my-10 p-10 rounded-xl'>
+            <div className='w-full lg:w-9/12 mx-auto bg-white my-10 p-10 rounded-xl'>
                 <h1 id='feature' className='text-3xl font-bold mb-6'>Key Features</h1>
                 <ul className='text-left font-semibold'>
-                    <li>1. {details?.feature?.f1}</li>
-                    <li>2. {details?.feature?.f2}</li>
-                    <li>3. {details?.feature?.f3}</li>
-                    <li>4. {details?.feature?.f4}</li>
-                    <li>5. {details?.feature?.f5}</li>
+                    <li className='my-2'>1. {details?.feature?.f1}</li>
+                    <li className='my-2'>2. {details?.feature?.f2}</li>
+                    <li className='my-2'>3. {details?.feature?.f3}</li>
+                    <li className='my-2'>4. {details?.feature?.f4}</li>
+                    <li className='my-2'>5. {details?.feature?.f5}</li>
                 </ul>
 
-                <p className='mt-6 '>Technologies:{details.Technologies}</p>
+                <p className='mt-6 text-start font-bold'>Technologies: <span className='font-normal'>{details.Technologies}</span></p>
 
-                <div className='flex justify-between mt-6'>
-                    <a target={'_blank'} className='btn btn-accent text-white' href={details.live}>Live Site</a>
-                    <div className='flex'>
+                <div className='flex justify-between flex-col lg:flex-row mt-6'>
+                    <a target={'_blank'} className='btn btn-accent my-3 lg:my-0 text-white' href={details.live}>Live Site</a>
+                    <div className='flex flex-col lg:flex-row '>
                         <a target={'_blank'} className='btn btn-neutral text-white mx-2' href={details.client}>Client Repository</a>
-                        <a target={'_blank'} className='btn btn-secondary text-white' href={details.server}>Server Repository</a>
+                        <a target={'_blank'} className='btn my-3 lg:my-0 btn-secondary text-white' href={details.server}>Server Repository</a>
                     </div>
                 </div>
 
